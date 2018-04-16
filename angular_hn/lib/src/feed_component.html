@@ -1,3 +1,4 @@
+<material-input leadingText="Filter" style="width: 100%" #input (keyup)="hackerNewsService.filterQuery.add(input.inputText)"></material-input>
 <article *ngFor="let item of hackerNewsService.results | async">
   <item [item]="item"></item>
 </article>
