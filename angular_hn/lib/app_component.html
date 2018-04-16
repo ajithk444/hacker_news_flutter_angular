@@ -1,0 +1,11 @@
+<header>
+  <nav>
+    <a href="https://webdev.dartlang.org/angular">
+      <img src="/images/logo.svg" alt="AngularDart logo"> Hacker News Angular
+    </a>
+    <a [routerLink]="newsUrl" routerLinkActive="active">top</a>
+  </nav>
+</header>
+<main>
+  <router-outlet [routes]="routes"></router-outlet>
+</main>
